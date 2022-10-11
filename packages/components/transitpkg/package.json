@@ -1,0 +1,24 @@
+{
+  "name": "medex-plus",
+  "version": "1.0.1",
+  "main": "lib/index.js",
+  "module": "es/index.mjs",
+  "files": [
+    "es",
+    "lib"
+  ],
+  "keywords": [
+    "medex-plus",
+    "vue2组件库"
+  ],
+  "dependencies": {
+    "@medex-plus/utils": "0.0.1"
+  },
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "author": "Wick Magic <tomato.stao@gmail.com>",
+  "license": "GPL-3.0",
+  "description": "",
+  "typings": "lib/index.d.ts"
+}

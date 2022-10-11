@@ -1,0 +1,24 @@
+{
+  "name": "medex-plus",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "build": "vite build",
+    "test": "vitest run"
+  },
+  "files": [
+    "es",
+    "lib"
+  ],
+  "keywords": [
+    "medex-components",
+    "vue2组件库"
+  ],
+  "author": "Wick Magic",
+  "license": "MIT",
+  "description": "",
+  "typings": "lib/index.d.ts",
+  "dependencies": {
+    "@medex-plus/utils": "workspace:0.0.1"
+  }
+}
