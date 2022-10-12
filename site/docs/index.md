@@ -1,11 +1,11 @@
 ---
 layout: home
 
-title: medex-plus
+title: kitty-plus
 titleTemplate: 一个Vue2组件库
 
 hero:
-  name: medex-plus
+  name: kitty-plus
   text: 一个Vue2组件库
   tagline: 没啥特点仅供学习
   image:

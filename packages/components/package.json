@@ -1,6 +1,6 @@
 {
-  "name": "medex-plus",
-  "version": "1.0.0",
+  "name": "kitty-plus",
+  "version": "1.0.2",
   "main": "index.ts",
   "scripts": {
     "build": "vite build",
@@ -19,6 +19,6 @@
   "description": "",
   "typings": "lib/index.d.ts",
   "dependencies": {
-    "@medex-plus/utils": "workspace:0.0.1"
+    "@kitty-plus/utils": "workspace:0.0.1"
   }
 }

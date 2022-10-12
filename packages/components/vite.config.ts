@@ -1,10 +1,11 @@
 /// <reference types="vitest" />
 import { defineConfig } from "vite";
-import vue2 from "@vitejs/plugin-vue2"
+import { createVuePlugin } from 'vite-plugin-vue2'
 import dts from 'vite-plugin-dts'
 import { resolve } from 'path'
 export default defineConfig(
     {
+        base: './',
         build: {
             target: 'modules',
             //打包文件目录
@@ -15,7 +16,7 @@ export default defineConfig(
             //cssCodeSplit: true,
             rollupOptions: {
                 //忽略打包vue文件
-                external: ['vue', /\.less/],
+                external: ['vue', /\.less/, '@kitty-plus/utils'],
                 input: ['index.ts'],
                 output: [
                     {
@@ -24,6 +25,7 @@ export default defineConfig(
                         entryFileNames: '[name].mjs',
                         //让打包目录和我们目录对应
                         preserveModules: true,
+                        preserveModulesRoot: resolve(__dirname, './'),
                         exports: 'named',
                         //配置打包根目录
                         dir: resolve(__dirname, './dist/es'),
@@ -35,6 +37,7 @@ export default defineConfig(
                         entryFileNames: '[name].js',
                         //让打包目录和我们目录对应
                         preserveModules: true,
+                        preserveModulesRoot: resolve(__dirname, './'),
                         exports: 'named',
                         //配置打包根目录
                         dir: resolve(__dirname, './dist/lib'),
@@ -49,7 +52,9 @@ export default defineConfig(
         },
 
         plugins: [
-            vue2(),
+            createVuePlugin({
+                jsx: true,
+            }),
             dts({
                 entryRoot: 'src',
                 outputDir: [resolve(__dirname, './dist/es/src'), resolve(__dirname, './dist/lib/src')],
@@ -70,7 +75,7 @@ export default defineConfig(
                         this.emitFile({
                             type: 'asset',
                             fileName: key,//文件名名不变
-                            source: bundler.code.replace(/\.less/g, '.css')
+                            source: bundler.code.replace(/(\..\/..\/packages\/components\/src\/\w+\/)(\w+)(\/\w+)(\.less)/g, './$2$3.css')
                         })
                     }
                 }

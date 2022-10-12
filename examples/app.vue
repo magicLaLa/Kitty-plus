@@ -1,6 +1,6 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import { MedexText } from 'medex-plus';
+import { MedexText } from 'kitty-plus';
 
 @Component({
   name: 'Test',

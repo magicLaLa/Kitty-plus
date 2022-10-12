@@ -1,5 +1,5 @@
 {
-  "name": "@medex-plus/utils",
+  "name": "@kitty-plus/utils",
   "version": "0.0.1",
   "main": "dist/lib/index.js",
   "module": "dist/es/index.js",

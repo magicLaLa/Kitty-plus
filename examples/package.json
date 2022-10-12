@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "medex-plus": "workspace:^1.0.0"
+    "kitty-plus": "workspace:1.0.2"
   }
 }

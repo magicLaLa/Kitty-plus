@@ -1,5 +1,5 @@
 {
-  "name": "medex-plus",
+  "name": "kitty-plus",
   "version": "1.0.1",
   "main": "lib/index.js",
   "module": "es/index.mjs",
@@ -8,11 +8,11 @@
     "lib"
   ],
   "keywords": [
-    "medex-plus",
+    "kitty-plus",
     "vue2组件库"
   ],
   "dependencies": {
-    "@medex-plus/utils": "0.0.1"
+    "@kitty-plus/utils": "0.0.1"
   },
   "sideEffects": [
     "**/*.css"

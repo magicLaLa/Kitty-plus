@@ -1,6 +1,6 @@
 # 快速开始
 
-本节将介绍如何在项目中使用 medex-plus
+本节将介绍如何在项目中使用 kitty-plus
 
 ## 用法
 
@@ -11,7 +11,7 @@
 
 <script lang='ts'>
 
-import { Button } from 'medex-plus'
+import { Button } from 'kitty-plus'
 
 </script>
 ```
