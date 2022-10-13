@@ -15,6 +15,7 @@ export default class MedexText extends Vue {
   @Prop({ default: '' }) readonly text!: string;
 
   public created() {
+    const a = '';
     console.log('HelloWorld created', this.text);
   }
 }

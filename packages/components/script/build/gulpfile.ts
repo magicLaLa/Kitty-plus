@@ -1,5 +1,5 @@
-import { series, parallel } from 'gulp'
-import { removeDist, buildStyle, buildComponent } from './index'
+import { series, parallel } from 'gulp';
+import { removeDist, buildStyle, buildComponent } from './index';
 
 
 export default series(
@@ -8,5 +8,5 @@ export default series(
         async () => buildStyle(),
         async () => buildComponent()
     )
-)
+);
 

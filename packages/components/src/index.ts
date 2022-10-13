@@ -1,1 +1,1 @@
-export { default as MedexText } from './Text'
+export { default as MedexText } from './Text';

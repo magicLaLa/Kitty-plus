@@ -1,4 +1,4 @@
-import { defineConfig } from "vite";
+import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
 import { resolve } from 'path';
 export default defineConfig(
@@ -6,7 +6,7 @@ export default defineConfig(
         build: {
             target: 'modules',
             //打包文件目录
-            outDir: "es",
+            outDir: 'es',
             //压缩
             minify: true,
             //css分离
@@ -58,4 +58,4 @@ export default defineConfig(
         ]
 
     }
-)
+);

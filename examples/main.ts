@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import App from './app.vue';
-import MedexComponents from "kitty-plus";
+import MedexComponents from 'kitty-plus';
 
 Vue.config.productionTip = false;
 
